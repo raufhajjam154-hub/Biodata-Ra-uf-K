@@ -77,32 +77,6 @@ nav {
   color: rgb(109, 67, 0);
 }
 
-.dropdown {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  transform: translateY(-500px);
-  width: 100%;
-  height: auto;
-  backdrop-filter: brightness(40%) blur(3px);
-  box-shadow: 0 0 20px black;
-  transition: 0.2s linear;
-}
-
-.dropdown .links a {
-  color: white;
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  padding: 15px 0;
-  align-items: center;
-  transition: 0.2s linear;
-}
-
-.dropdown .links a:hover {
-  background-color: rgb(109, 67, 0);
-}
-
 section {
   width: 100%;
   height: 90vh;
