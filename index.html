@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Biodata Diri</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Biodata</span>
+        </div>
+        <div class="links">
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <a href="#home">Beranda</a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <a href="#about">Tentang</a>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <a href="#skills">Keahlian</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <a href="#contact">Kontak</a>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="#home ">Beranda</a>
+          <a href="#about">Tentang</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#contact">Kontak</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <section class="hero" id="home">
+      <main class="content">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+          <img src="main.jpg" alt="foto profil" />
+        </div>
+        <h1>Halo saya Ra'uf Khoirul Hajjam</h1>
+        <p>
+          Seorang pelajar yang antusias di bidang teknologi, jaringan komputer,
+          dan desain web. Saya senang mengeksplorasi hal baru serta menciptakan
+          sesuatu yang bermanfaat dan inspiratif. Saya memiliki rasa ingin tahu
+          yang tinggi terhadap dunia teknologi dan desain digital. Berpengalaman
+          dalam mengelola jaringan Mikrotik dan membuat situs web interaktif,
+          saya percaya bahwa teknologi adalah sarana untuk memberdayakan manusia
+          dan memperluas potensi kreatif. Keahlian saya ada pada bidang Jaringan
+          Mikrotik dan Web Design
+        </p>
+      </main>
+    </section>
+    <section class="about" id="about">
+      <h1>Tentang Saya</h1>
+      <p>
+        Saya adalah seseorang yang memiliki ketertarikan kuat pada dunia
+        teknologi, desain web, dan pengembangan sistem. Saya selalu berusaha
+        memadukan kreativitas dengan pemikiran logis untuk menciptakan solusi
+        yang efektif. Bagi saya, belajar adalah proses tanpa henti, dan setiap
+        proyek merupakan kesempatan untuk berkembang.
+      </p>
+    </section>
+    <section class="skills" id="skills">
+      <h1>Keahlian</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript Dasar</li>
+      </ul>
+    </section>
+    <section class="contact" id="contact">
+      <h1>Kontak Saya</h1>
+      <p>Anda bisa menghubungi saya dengan</p>
+      <div
+        class="social"
+        data-aos="flip-down"
+        data-aos-duration="1000"
+        data-aos-delay="1200"
+      >
+        <a href="https://www.facebook.com/rauf.khoirul.56" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/raufhajjam154/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/@raufkhoirulhajjam1884" target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script>
+      function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+  </body>
+</html>
